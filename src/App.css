@@ -1,0 +1,87 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.general {
+  display: grid;
+  grid-template-areas:
+    "a . . ."
+    "b b . ."
+    "c c c ."
+    "d d d d"
+    ". e e ."
+    ". f f f"
+    ". g . ."
+    ".  h h .";
+
+  margin-left: 16px;
+  margin-right: 16px;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+.buttonUno {
+  grid-area: a;
+}
+.buttonDos {
+  grid-area: b;
+}
+.buttonTres {
+  grid-area: c;
+}
+.buttonCuatro {
+  grid-area: d;
+}
+.buttonCinco {
+  grid-area: e;
+}
+.buttonSeis {
+  grid-area: f;
+}
+.buttonSiete {
+  grid-area: g;
+}
+.buttonOcho {
+  grid-area: h;
+}
+button {
+  background: #f6007c;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  height: 40px;
+}
