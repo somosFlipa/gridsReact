@@ -85,3 +85,59 @@ button {
   border: none;
   height: 40px;
 }
+
+.generalDos {
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1 h1"
+    "p p p p"
+    "x x x x"
+    "button button button button";
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+h1 {
+  grid-area: h1;
+  font-size: 2rem;
+  margin: 0;
+}
+p {
+  grid-area: p;
+  margin: 0;
+  font-size: 1rem;
+}
+.verMas {
+  grid-area: x;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-top: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: " . pv sp .";
+}
+.verMas span {
+  background-color: #f6007c;
+  border-radius: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  grid-area: sp;
+}
+.verMas p {
+  font-size: 1rem;
+  grid-area: pv;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+.secondButton {
+  grid-area: button;
+  margin-top: 14.188em;
+}
