@@ -1,0 +1,82 @@
+.general__GridTres {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "bloques bloques bloques bloques";
+  margin-left: 16px;
+  margin-right: 16px;
+  row-gap: 16px;
+  column-gap: 16px;
+  padding-top: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fondo {
+  background-color: #161616;
+}
+.nav {
+  grid-area: nav;
+}
+.hero {
+  grid-area: hero;
+}
+.hero h1 {
+  color: #fff;
+}
+.hero p {
+  color: #f6007c;
+}
+.bloques {
+  grid-area: bloques;
+}
+.bloques {
+  display: grid;
+  grid-template-areas:
+    "bloqueUno"
+    "bloqueDos"
+    "bloqueTres"
+    "bloqueCuatro"
+    "gridTres__Button";
+  row-gap: 16px;
+}
+.bloque__GridTres {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 12.5em;
+}
+.bloqueUno {
+  grid-area: bloqueUno;
+  background-color: #ffffff;
+}
+.bloqueDos {
+  grid-area: bloqueDos;
+  background-color: #fff200;
+}
+.bloqueTres {
+  grid-area: bloqueTres;
+  background-color: #3d44ff;
+}
+.bloqueCuatro {
+  grid-area: bloqueCuatro;
+  background-color: #2ce5b9;
+}
+.gridTres__Button {
+  grid-area: gridTres__Button;
+}
+.general__GridTres .nav .logo {
+  background-color: #f6007c;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.general__GridTres .nav .menu {
+  background-color: #f6007c;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.general__GridTres .nav {
+  display: flex;
+  justify-content: space-between;
+}

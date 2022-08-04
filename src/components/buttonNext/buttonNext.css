@@ -1,0 +1,10 @@
+.buttonNext__Grid {
+  width: 100%;
+  background: #2ce5b9;
+  color: #000;
+  border: none;
+  margin-top: 5em;
+  border-radius: 5em;
+  height: 50px;
+  margin-bottom: 5em;
+}
