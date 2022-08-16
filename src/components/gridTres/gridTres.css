@@ -30,35 +30,21 @@
 .bloques {
   grid-area: bloques;
 }
-.bloques {
-  display: grid;
-  grid-template-areas:
-    "bloqueUno"
-    "bloqueDos"
-    "bloqueTres"
-    "bloqueCuatro"
-    "gridTres__Button";
-  row-gap: 16px;
-}
-.bloque__GridTres {
-  border-radius: 0.5em;
-  width: 100%;
-  height: 12.5em;
-}
+
 .bloqueUno {
-  grid-area: bloqueUno;
+  grid-area: ba;
   background-color: #ffffff;
 }
 .bloqueDos {
-  grid-area: bloqueDos;
+  grid-area: bb;
   background-color: #fff200;
 }
 .bloqueTres {
-  grid-area: bloqueTres;
+  grid-area: bc;
   background-color: #3d44ff;
 }
 .bloqueCuatro {
-  grid-area: bloqueCuatro;
+  grid-area: bd;
   background-color: #2ce5b9;
 }
 .gridTres__Button {
@@ -70,13 +56,87 @@
   height: 1.5rem;
 }
 
-.general__GridTres .nav .menu {
-  background-color: #f6007c;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .general__GridTres .nav {
   display: flex;
   justify-content: space-between;
+}
+/* compu */
+@media (min-width: 769px) and (max-width: 1920px) {
+  .general__GridTres .nav .menu {
+    background-color: #161616;
+  }
+  .general__GridTres .nav .menu ul {
+    background-color: #161616;
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+  }
+  .bloques {
+    column-gap: 16px;
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+    grid-template-areas:
+      "ba ba ba ba ba ba ba ba"
+      "bb bb bb bb bbx bbx bbx bbx"
+      "bc bc bc bc bc bc bc bc"
+      "bd bd bd bd bd bd bd bd"
+      ". . gridTres__Button gridTres__Button gridTres__Button gridTres__Button . .";
+    row-gap: 16px;
+  }
+  .bloque__GridTres {
+    border-radius: 0.5em;
+    width: 100%;
+    height: 12.5em;
+  }
+  .bloqueDos__Duplicado {
+    background-color: #fff200;
+    grid-area: bbx;
+    height: 18.75em;
+  }
+  .bloqueUno {
+    height: 25em;
+  }
+  .bloqueDos {
+    height: 18.75em;
+  }
+  .bloqueTres {
+    height: 16.875em;
+  }
+  .bloqueCuatro {
+    height: 25.625em;
+  }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .general__GridTres .nav .menu {
+    background-color: #f6007c;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .general__GridTres .nav .menu ul {
+    display: none;
+  }
+  .bloqueDos__Duplicado {
+    display: none;
+  }
+  .bloques {
+    display: grid;
+    grid-template-areas:
+      "ba ba ba ba"
+      "bb bb bb bb"
+      "bc bc bc bc"
+      "bd bd bd bd"
+      "gridTres__Button gridTres__Button gridTres__Button gridTres__Button";
+    row-gap: 16px;
+  }
+  .bloque__GridTres {
+    border-radius: 0.5em;
+    width: 100%;
+    height: 12.5em;
+  }
+
+  label,
+  input {
+    display: none;
+  }
 }
